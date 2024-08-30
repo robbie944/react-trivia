@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+  font-family: 'Your Font Family', sans-serif;
+  background-color: black;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+/* The top section */
+.top {
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.top h1 {
+  color: red;
+  font-family: 'Eater', cursive;
+}
+
+/* The main container */
+.container {
+  display: flex;
+  flex-grow: 1; /* Take up the remaining space */
+  width: 100%;
+  box-sizing: border-box;
+  
+}
+
+.left, .middle, .right {
+  height: 100%; /* Ensure these elements stretch to full height */
+  box-sizing: border-box; /* Include padding in the width and height calculations */
+}
+
+.left {
+  background-color: black;
+  background-image: url('./assets/images/scaryForestPic.jpg'); 
+  background-size: cover;
+  background-position: center;
+  width: 20%;
+}
+
+.middle {
+  background-color: gray;
+  width: 60%;
+  text-align: center;
+}
+
+.right {
+  background-color: black;
+  width: 20%;
+}
+
+/* Button styles */
+.middle .trivia-button, .middle .choices, .triviaCard .nextButton, .triviaCard .startOver {
+  background-color: #0a0a0a;  
+  color: #fff;  
+  padding: 10px 20px;  
+  border-radius: 5px; 
+  margin: 10px;
+}
+
+
+
+.middle .choices {
+  background-color: black;  
+  color: red;  
+}
+
+.triviaCard ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.middle .score {
+  color:red;
+}
